@@ -1,0 +1,80 @@
+# Build directories
+build/
+bin/
+lib/
+*.exe
+*.so
+*.dylib
+*.dll
+*.a
+
+# Compilation artifacts
+*.o
+*.obj
+*.ko
+*.ilk
+*.map
+*.exp
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+CTestTestfile.cmake
+Testing/
+install_manifest.txt
+compile_commands.json
+*.cmake
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Temporary files
+*.tmp
+*.temp
+*.pid
+*.pid.lock
+
+# Coverage and profiling
+*.gcda
+*.gcno
+*.profdata
+
+# Doxygen generated documentation
+docs/html/
+docs/latex/
+
+# Package files
+*.deb
+*.rpm
+*.tar.gz
+*.zip
+
+# MySQL data
+data/
+mysql_data/
+
+# Application specific
+upload/
+downloads/
+temp/
+docs/
