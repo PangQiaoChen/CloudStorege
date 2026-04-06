@@ -4,7 +4,7 @@
 [![CMake](https://img.shields.io/badge/CMake-3.10+-brightgreen.svg)](https://cmake.org/)
 
 ## 项目概述
-本项目是一个基于 muduo 网络库风格实现的 Web 文件管理系统。项目采用 C++17 标准，实现了完整的 HTTP 服务器、文件上传下载（断点续传）、用户认证、会话管理（Session-ID）和文件分享等功能。
+本项目是一个基于 muduo 网络库风格实现的云存储项目。项目采用 C++17 标准，实现了完整的 HTTP 服务器、文件上传下载（断点续传）、用户认证、会话管理（Session-ID）和文件分享等功能。
 
 
 ### 主要特性
@@ -13,7 +13,7 @@
 - 🔐 **用户认证**：支持用户注册、登录、会话管理（Session-ID）
 - 🔗 **文件分享**：支持多种分享方式（私有、公开、受保护（分享码机制）、指定用户）
 - 🎯 **现代化架构**：清晰的模块分离，遵循 C++ 实践
-- 📊 **数据库支持**：完整的MySQL数据库设计和数据持久化
+- 📊 **数据库支持**：完整的 MySQL 数据库设计和数据持久化
 
 ## 目录结构
 ```
@@ -31,8 +31,8 @@ cloudStorege/
 - **构建工具**: CMake 3.10+
 - **数据库**: MySQL 5.7+
 - **依赖库**: 
-  - Boost库
-  - MySQL客户端库 (libmysqlclient-dev)
+  - Boost 库
+  - MySQL 客户端库 (libmysqlclient-dev)
 
 ### 安装依赖
 
@@ -66,7 +66,7 @@ cd build/bin
 
 ## 数据库设计
 
-项目使用MySQL数据库存储用户信息、文件数据和分享记录。数据库设计包含以下表：
+项目使用 MySQL 数据库存储用户信息、文件数据和分享记录。数据库设计包含以下表：
 
 1. 用户表(users)
 2. 会话表(sessions)
@@ -75,7 +75,7 @@ cd build/bin
 
 ### 数据库常用命令
 ```
-// 使用用户名 密码导入数据库
+// 使用用户名+密码导入数据库
 mysql -u username -ppassword < file_manager.sql
 // 启动 MySQL 服务
 sudo systemctl start mysql
